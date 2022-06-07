@@ -1,0 +1,110 @@
+<Doctype html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		
+		<title>Gradesheet</title>
+
+  	
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+			
+			<!--CSS STYLE -->
+
+    <style type="text/css">
+
+    	body{
+    		background-color: rgb(125,209,129);
+    		font-family: verdana monospace;
+    		font-size: 18px;
+
+    	}
+    </style>
+    
+	</head>
+	<body>
+
+		<div class="container mt-3">
+		
+		<table class="table">
+			<tr>
+			   <th> Subject </th>
+			   <th> Score </th>
+			   <th> Grade</th>
+			</tr>
+			<tr>
+				<td>English</td>
+				<td><input type="text" name="number" id="eng"
+					onchange="getgrade()
+
+				"></td>
+				<td><input type="text" name="number" id="engscore"></td>
+			</tr>
+			<tr>
+				<td>Maths</td>
+				<td><input type="text" name="number" id="mth" onkeyup="maths()
+				
+				"></td>
+				<td><input type="text" name="number" id="grd1"></td>
+			</tr>
+			<tr>
+				<td>Chemistry</td>
+				<td><input type="text" name="number" id="chm" onkeyup="chemistry()
+				
+				"></td>
+				<td><input type="text" name="number" id="grd2"></td>
+			</tr>
+			<tr>
+				<td>Biology</td>
+				<td><input type="text" name="number" id="bio" onkeyup="biology()
+				
+				"></td>
+				<td><input type="text" name="number" id="grd3"></td>
+			</tr>
+			<tr>
+				<td>French</td>
+				<td><input type="text" name="number" id="frnch" onkeyup="french()
+				
+				"></td>
+				<td><input type="text" name="number" id="grd4"></td>
+			</tr>
+
+			<tr>
+				<td>
+					<button type="button" class="btn btn-warning" id="get" onclick="total()
+					 
+					"> Get Result</button>
+				</td>
+			</tr>
+
+		
+	</table>
+	 					<!-- TABLE ENDS HERE-->
+
+
+	   <!--  <p>TOTAL</p>
+
+	    <span id="mytotal"></span>
+
+	    <p>
+
+	    AVERAGE</p>
+
+	    <span id="myaverage"></span>
+
+	    <p>Remarks</p>
+	    
+	    <span id="myremarks"></span> -->
+    
+    </div>
+
+	<script src="js/bootstrap.bundle.js" type="text/javascript"></script>
+
+	<script  type="text/javascript" language="javascript">
+		funtion getgrade(){
+			var english = document.getElementById('engscore')
+		}
+
+	</script>
+	
+	</body>
+	</html>
